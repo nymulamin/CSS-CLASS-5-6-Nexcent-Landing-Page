@@ -1,0 +1,556 @@
+/* * CODED BY NYMUL */
+
+/* COMMON CSS START */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+	--neutral-white: #fff;
+	--neutral-silver: #f5f7fa;
+	--neutral-grey-blue: #abbed1;
+	--neutral-l-grey: #89939e;
+	--neutral-grey: #717171;
+	--neutral-d-grey: #4d4d4d;
+	--neutral-black: #263238;
+	--neutral-white-stroke: #abbed1;
+	--brand-info: #2194f3;
+	--brand-secondary: #263238;
+	--brand-primary: #4caf4f;
+	--shade-s1: #43a046;
+	--shade-s2: #388e3b;
+	--shade-s3: #237d31;
+	--shade-s4: #1b5e1f;
+	--shade-s5: #103e13;
+	--tint-t1: #66bb69;
+	--tint-t2: #81c784;
+	--tint-t3: #a5d6a7;
+	--tint-t4: #c8e6c9;
+	--tint-t5: #e8f5e9;
+	--action-success: #2e7d31;
+	--action-error: #e53835;
+	--action-warning: #fbc02d;
+  --font-family: "Inter", sans-serif;
+  --second-family: "Montserrat", sans-serif;
+  --text-color:#18191f
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,ol{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  font-family: var(--font-family);
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* COMMON CSS END */
+
+/* Header CSS Starts */
+
+.navLogo{
+	width: 20%;
+}
+.navMenu{
+	width: 60%;
+}
+.navBtn{
+	width: 20%;
+}
+nav{
+	background-color:var(--neutral-silver);
+	padding: 15px 0;
+}
+.navMenu ul li a {
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color:var(--text-color);
+transition:all 0,3s ease-in-out;
+padding: 0 25px;
+}
+.navMenu ul li a:hover{
+	font-weight: 500;
+	color: orange;
+} 
+.btn{
+border-radius: 4px;
+padding: 7px 16px;
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+}
+.primary{
+	background: var(--neutral-silver);
+	color: var(--brand-primary);
+	border:1px solid var(--brand-primary)
+}
+.secondary{
+	background: var(--brand-primary);
+	color: var(--neutral-white);
+}
+nav .btn{
+	padding: 10px 20px;
+}
+nav .secondary{
+	border-radius: 10px 0 0 10px;
+}
+/* Header CSS Ends */
+
+/* Hero Section Starts */
+
+.heroText{
+	width: 60%;
+	padding:80.5px 0 ;
+}
+.heroText .secondary{
+padding: 14px 32px;
+width: 128px;
+height: 52px;
+}
+.heroImg{
+	width: 40%;
+	padding:48px 0 ;
+}
+.heroSection{
+	position: relative;
+	background-color:var(--neutral-silver);
+}
+.heroText p{
+	margin: 16px 0 32px 0;
+	font-weight: 400;
+}
+.heroText h1{
+font-weight: 600;
+font-size: 64px;
+line-height: 119%;
+color: var(--neutral-d-grey);
+}
+.heroText h1 span{
+	color: var(--brand-primary);
+}
+.heroImg img{
+	width: 100%;
+}
+.dots {
+position: absolute;
+top: 97%;
+left:50%;
+transform: translate(-50% , -50%);
+}
+/* Hero Section Ends */
+
+/* Client Section Starts */
+
+#clientText{
+padding: 0 144px;
+height: 190px;
+background: var(--neutral-white);	
+text-align: center;
+}
+#clientText h2{
+	padding-top: 40px;
+}
+#clientText p{
+	margin:8px 0 16px 0;
+}
+#clientText .row {
+	justify-content: space-around;
+}
+
+/* Client Section Ends */
+
+/* About Us Section Starts */
+
+#aboutUs{
+margin-top: 40px;
+text-align: center;
+}
+#aboutUs p{
+margin-top: 8px;
+margin-bottom: 16px;
+font-weight: 400;
+font-size: 16px;
+color: var(--neutral-grey);
+}
+#aboutUs h2{
+font-weight: 600;
+font-size: 36px;
+color: var(--neutral-d-grey);
+}
+#aboutUs span{
+	display: block;
+}
+#aboutUs .row{
+	justify-content: space-around;
+}
+.card{
+border-radius: 8px;
+padding: 24px 32px;
+width: 299px;
+height: 260px;
+box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#aboutUs h3{
+margin:16px 0 8px 0;
+font-weight: 700;
+font-size: 28px;
+line-height: 129%;
+color: var(--neutral-d-grey);
+}
+#aboutUs p{
+font-weight: 400;
+font-size: 14px;
+line-height: 143%;
+color: var(--neutral-grey);
+padding-bottom: 10px;
+}
+
+/* About Us Section Ends */
+
+/* Unseen Section Starts */
+
+#unseen{
+	margin-top: 42px;
+}
+.unseenImage{
+	width:40%;
+}
+.unseenText{
+	width: 60%;
+	margin:82.5px 0 82.8px 0;
+}
+.unseenText h2{
+font-weight: 600;
+font-size: 36px;
+line-height: 122%;
+color: var(--neutral-d-grey);
+}
+.unseenText p{
+font-weight: 400;
+font-size: 14px;
+line-height: 143%;
+color: var(--neutral-grey);
+margin:16px 0 32px 0;
+}
+.unseenText a{
+	padding: 14px 32px;
+}
+#unseen span{
+	display: block;
+}
+
+/* Unseen Section Ends */
+
+/* Experience Section Starts */
+.aboutThat{
+	width: 50%;
+}
+.aboutThat span{
+color: var(--brand-primary);
+display: block;
+}
+.aboutThat h2{
+font-weight: 600;
+font-size: 36px;
+line-height: 122%;
+color: var(--neutral-d-grey);
+}
+.aboutThat p{
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: #18191f;
+}
+.workResults{
+width: 50%;
+}
+.workCard{
+width: 50%;
+display: flex;
+}
+.workCard img{
+	width: 48px;
+	height: 48px;
+}
+.workHeading{
+text-align: center;
+width: 170px;
+height: 60px;
+}
+#Experience{
+padding: 64px 144px;
+background: var(--neutral-silver);
+}
+
+/* Experience Section Endts */
+
+/* How To Design Section Starts */
+
+.designImage{
+	width: 40%;
+}
+.designInstruction{
+	width: 60%;
+	justify-content: center;
+	padding-top: 62px;
+}
+#HowToDesign{
+padding: 48px 0;
+}
+.designInstruction h2{
+font-weight: 600;
+font-size: 36px;
+line-height: 122%;
+color: var(--neutral-d-grey);
+}
+.designInstruction p{
+font-weight: 400;
+font-size: 14px;
+line-height: 143%;
+color: var(--neutral-grey);
+padding:16px 0 32px 0;
+}
+.designInstruction span{
+	display: block;
+}
+.designInstruction a{
+padding: 14px 32px;
+}
+
+/* How To Design Section Starts */
+
+/* Customer Review Section Starts*/
+
+.Customer{
+width: 30%;
+}
+.Review{
+width: calc(70% - 40px);
+display: flex;
+min-width: 0;
+flex-direction: column;
+}
+#CustomerReview{
+padding: 26px 0 10px 0;
+background: var(--neutral-silver);
+}
+#CustomerReview .container .row {
+display: flex;
+align-items: stretch;
+gap: 40px;
+}
+.Customer img {
+display: block;
+width: 100%;
+height: auto;
+}
+.Review h3{
+font-weight: 600;
+font-size: 20px;
+line-height: 140%;
+color: var(--brand-primary);
+padding:16px 0 8px;
+}
+.Review p{	
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+color: var(--neutral-grey);
+}
+.Review span{
+font-weight: 400;
+}
+.otherCustomers .row{
+justify-content: space-between;
+}
+.otherCustomers a{
+font-weight: 600;
+font-size: 20px;
+line-height: 140%;
+color: var(--brand-primary);
+}
+.otherCustomers{
+	margin-top: 50px;
+}
+.Review .GoToSection{
+margin-top: 12px;
+}
+
+/* Customer Review Section Ends*/
+
+/* Marketing Section Starts */
+
+#Marketing{
+	padding-top: 48px;
+	padding-bottom: 100px;
+}
+.marketingCard{
+	position:relative;
+}
+.marketingDetails{
+text-align: center;
+position:absolute;
+top:97%;
+left:50%;
+transform: translate(-50% , -50%);
+border-radius: 8px;
+padding: 20px;
+width: 317px;
+height: 176px;
+box-shadow: 0 8px 16px 0 rgba(171, 190, 209, 0.4);
+background: var(--neutral-silver);
+}
+.marketingHeading h2{
+font-weight: 600;
+font-size: 36px;
+line-height: 122%;
+text-align: center;
+color: var(--neutral-d-grey);
+}
+.marketingHeading p{
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+color: var(--neutral-grey);
+margin:8px 0 16px 0;
+}
+.marketingCards .row{
+	justify-content: space-around;
+}
+.marketingDetails p{
+	margin-bottom: 20px;
+}
+.moreInfo{
+	color: var(--brand-primary);
+}
+
+/* Marketing Section Ends */
+
+/* Finishing Section Starts*/
+
+#Finishing{
+	padding-top: 32px;
+	text-align: center;
+}
+#Finishing h2{
+padding-bottom: 32px;
+font-weight: 600;
+font-size: 64px;
+line-height: 119%;
+text-align: center;
+color: var(--neutral-black);
+}
+#Finishing a{
+	padding: 14px 32px;
+}
+#Finishing span{
+	display: block;
+}
+/* Finishing Section Ends*/
+
+/* Footer Part Starts */
+
+footer{
+margin-top: 32px;	
+background: var(--neutral-black);
+padding: 64px 165px;
+height: 328px;
+}
+.socialMedia{
+	width:30%;
+}
+.company{
+	width: 20%;
+}
+.support{
+	width:20%;
+}
+.send{
+	width: 30%;
+}
+.socialMedia h2{
+	display: inline-block;
+	color: var(--neutral-white);
+	font-size:xx-large;
+}
+.footerAnchor{
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 143%;
+color: var(--neutral-silver);
+}
+footer h3{
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 20px;
+line-height: 140%;
+color: var(--neutral-white);
+margin-bottom: 24px;
+}
+.socialMedia p{
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 143%;
+color: var(--neutral-silver);
+padding: 45px 0;
+}
+.socialLinks p span{
+	display: block;
+}
+.company ul li,
+.support ul li{
+	margin-bottom: 12px;
+}
+.send form{
+	margin-top:25px;
+	position:relative;
+}
+.send form input{
+width: 255px;
+height: 35px;
+background: var(--neutral-white);
+background: rgba(255, 255, 255, 0.2);
+border: none;
+outline: none;
+padding: 0 12px;
+}
+.send form input::placeholder{
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 143%;
+color: #d9dbe1;
+}
+.send form button{
+position:absolute;
+top:50%;
+left: 65%;
+transform: translate(-50% , -50%);
+background: transparent;
+border:none;
+}
+/* Footer Part Ends */
+
+/* * CODED BY NYMUL */
